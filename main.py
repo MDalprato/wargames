@@ -3,7 +3,7 @@ from world_map import *
 from paused_print import *
 
 Question = input("Password ? ")
-if(Question == 'Joshua'):
+if(Question == 'prova'):
   printWorldMap()
 else:
-  printD("Disconnected")
+  console("Disconnected")
