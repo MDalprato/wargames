@@ -3,5 +3,5 @@ import time
 def console(msg):
   words = list(msg)  # ['I', 'need', 'practice']
   for word in words:
-    print(word, end ="",flush=True)
-    time.sleep(0.001)
+    print(word.upper(), end ="",flush=True)
+    time.sleep(0.02)

@@ -1,9 +1,13 @@
 #!/usr/bin/python
+from pickle import TRUE
+from auth import authMe
 from world_map import *
 from paused_print import *
+from list_of_games import listGames
 
-Question = input("Password ? ")
-if(Question == 'prova'):
-  printWorldMap()
+if(authMe() == TRUE):
+  listGames()
 else:
-  console("Disconnected")
+  console("noo")
+
+  
